@@ -73,25 +73,41 @@ class HomePage extends StatelessWidget {
                     ),
                     SizedBox(width: 10),
                     Expanded(
-                      child: Column(
-                        children: [
-                          Expanded(
-                            child: Row(
-                              children: [
-                                Expanded(
-                                  child: Text(
-                                    "Men's Harrington Jacket" * 4,
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 13,
-                                      color: Colors.black,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      "Men's Harrington Jacket",
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
-                                ),
-                              ],
+                                  Text(
+                                    "\$148",
+                                    style: GoogleFonts.gabarito(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                          Row(),
-                        ],
+                            Expanded(
+                              child: Row(
+                                children: [],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
