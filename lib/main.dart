@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => MyApp(),
     ),
   );
@@ -103,7 +103,39 @@ class HomePage extends StatelessWidget {
                             ),
                             Expanded(
                               child: Row(
-                                children: [],
+                                children: [
+                                  Text(
+                                    "Size",
+                                    style: TextStyle(
+                                      color: Colors.grey.shade600,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  Text(
+                                    " - M",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  SizedBox(width: 8),
+                                  Text(
+                                    "Color",
+                                    style: TextStyle(
+                                      color: Colors.grey.shade600,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  Text(
+                                    " - Lemon",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
